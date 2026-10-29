@@ -2,13 +2,19 @@
 
 fr:
   title: >-
-    Code Filao
+    RDV des Entrepreneurz
   contentDir: content/fr
   locale: fr
   label: Français
   buildFuture: true
   params:
     contact_details:
+      emails:
+        email:
+          label: >-
+            contact@codefilao.fr
+          value: >-
+            mailto:contact@codefilao.fr
 
   taxonomies:
     administrator: administrators
