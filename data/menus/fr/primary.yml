@@ -1,0 +1,25 @@
+---
+title: Menu principal
+items:
+- title: Philosophie
+  slug: philosophie
+  target: "/#philosophie"
+  kind: url
+  new_tab: false
+  children: []
+  descendants_targets: []
+- title: Agenda
+  slug: agenda
+  target: "/#prochains-ateliers"
+  kind: url
+  new_tab: false
+  children: []
+  descendants_targets: []
+- title: Partenaires
+  slug: partenaires
+  target: "/#partenaires"
+  kind: url
+  new_tab: false
+  children: []
+  descendants_targets: []
+
