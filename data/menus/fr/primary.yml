@@ -8,9 +8,9 @@ items:
   new_tab: false
   children: []
   descendants_targets: []
-- title: Agenda
-  slug: agenda
-  target: "/#prochains-ateliers"
+- title: Programme
+  slug: programme
+  target: "/#programme"
   kind: url
   new_tab: false
   children: []
