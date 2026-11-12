@@ -8,6 +8,15 @@ params:
   logo:
     header: "/assets/images/logo.png"
     footer: "/assets/images/logo.png"
+  share_links:
+    enabled: false
+    email: false
+    facebook: false
+    linkedin: false
+    mastodon: false
+    telegram: false
+    twitter: false
+    whatsapp: false
   home:
     head:
       title: site
