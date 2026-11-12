@@ -2,12 +2,20 @@ theme: osuny
 _merge: deep
 params:
   summary:
-    position: hero
+    position: content
   search:
-    active: true
+    active: false
   logo:
-    header: ''
-    footer: ''
+    header: "/assets/images/logo.png"
+    footer: "/assets/images/logo.png"
   home:
     head:
       title: site
+    toc:
+      disabled: true
+  toc:
+    force_offcanvas: false
+    disabled: true
+  breadcrumb:
+    extendable: true
+    position: none # hero-start | hero-end | after-hero | after-hero-title | none
