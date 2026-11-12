@@ -1,0 +1,99 @@
+h2
+    color: $color-text-alt
+    border-bottom: 4px solid $color-text-alt
+
+.block-class-background-alt
+    background-color: $color-background-alt
+    padding: $spacing-3 0
+
+// Header
+header#document-header .primary-menu
+    padding: 0.8rem 0
+div#navigation .nav-level-1
+    li a
+        text-transform: uppercase
+        &:hover, &:focus
+            text-decoration: underline
+            color: $header-hover-color
+
+// Hero
+.hero
+    padding-top: var(--header-height) 
+    margin-bottom: var(--header-height)
+    .content
+        align-items: center
+        .hero-text
+            margin-top: 1.6rem
+            h1 > span
+                margin-top: 1.6rem
+                @include h3
+                line-height: var(--h2-line-height)
+                font-weight: normal
+        .hero-actions 
+            margin-top: 3.2rem
+            a
+                @include icon(arrow-right-line, after, true)
+            .dropdown-share button
+                box-sizing: border-box
+                width: max-content
+
+// Programme
+.chapter:has(figure)
+    align-items: flex-end
+    .text 
+        .top:has(h3)
+            margin-bottom: calc(#{$spacing-2} + #{$spacing-2})
+        .rich-text p:has(b)
+                margin-top: calc(#{$spacing-2} + #{$spacing-2})
+
+// Agenda
+.events--grid
+    li
+        padding: 0.8rem
+        border-left: 1px solid $color-text-alt
+    li:has(a):hover,li:has(a):focus
+        border: 1px solid $color-text-alt
+.event-schedule p.event-dates
+    letter-spacing: normal
+.event-description p:first-child
+    color: $color-text-alt
+
+
+// Partenaires
+.organizations:not(.with-summaries)
+    li:has(a):hover, li:has(a):focus
+        border-bottom: 1px solid $color-text-alt
+    .organization
+        .media--logo
+            padding: 0.8rem
+        h2.organization-title:has(a)
+            border-bottom: none
+            padding-bottom: 0.8rem
+            text-align: center
+            @include body-text
+        a
+            letter-spacing: normal 
+
+// Page événement
+.event-access > div
+    .event-notes
+        p
+            @include body-text
+        a:hover, a:focus
+            font-style: italic
+            color: $header-hover-color
+// Footer
+footer#document-footer 
+    .footer-legals, .footer-social, .footer-credit
+        letter-spacing: normal
+        @include media-breakpoint-down(desktop)
+            text-align: center
+    .container + .container
+        align-items: flex-start
+        padding-top: 0
+    .container:first-child
+        justify-content: center
+        padding: 0
+    li
+        @include media-breakpoint-down(desktop)
+            margin: 0 auto
