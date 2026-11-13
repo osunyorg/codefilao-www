@@ -37,7 +37,7 @@ div#navigation .nav-level-1
                 box-sizing: border-box
                 width: max-content
 
-// Programme
+// Program section
 .chapter:has(figure)
     align-items: flex-end
     .text 
@@ -46,20 +46,25 @@ div#navigation .nav-level-1
         .rich-text p:has(b)
                 margin-top: calc(#{$spacing-2} + #{$spacing-2})
 
-// Agenda
+// Agenda section
 .events--grid
     li
         padding: 0.8rem
-        border-left: 1px solid $color-text-alt
-    li:has(a):hover,li:has(a):focus
-        border: 1px solid $color-text-alt
-.event-schedule p.event-dates
-    letter-spacing: normal
+        border: 1px solid transparent
+        border-left-color: $color-text-alt
+    li:has(a):hover,li:has(a:focus)
+        border-color: $color-text-alt
+.event-schedule
+    @include media-breakpoint-down(desktop)
+        flex-direction: column
+    p.event-dates, p.event-hours
+        letter-spacing: normal
+        @include small
 .event-description p:first-child
     color: $color-text-alt
 
 
-// Partenaires
+// Partners section
 .organizations:not(.with-summaries)
     li:has(a):hover, li:has(a):focus
         border-bottom: 1px solid $color-text-alt
@@ -74,7 +79,7 @@ div#navigation .nav-level-1
         a
             letter-spacing: normal 
 
-// Page événement
+// Event page
 .event-access > div
     .event-notes
         p
@@ -82,6 +87,11 @@ div#navigation .nav-level-1
         a:hover, a:focus
             font-style: italic
             color: $header-hover-color
+
+// Agenda page
+.calendar-month thead th
+    @include body-text
+    
 // Footer
 footer#document-footer 
     .footer-legals, .footer-social, .footer-credit
